@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Activity 1</title>
+</head>
+<body>
+
+    <header>
+        <h1>Javascript Crash Course</h1>
+    </header>
+
+    <section class="container">
+        <form id="my-form" action="#">
+            <label for="firstNum">First Number:</label><br>
+            <input type="text" id="firstNum" name="FirstNum"><br>
+            <label for="secondNum">Second Number:</label><br>
+            <input type="text" id="secondNum" name="secondNum"><br>
+            <label for="operator">Operator:</label>
+            <select name="operator" id="operator">
+                <option value="add">Add</option>
+                <option value="min">Minus</option>
+                <option value="div">Divide</option>
+                <option value="mul">Multiply</option>
+            </select>
+            <button class="btn" type="button" onclick="calc()">Calculate</button>
+        </form>
+        <div>
+            <h1 id="results"></h1>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
