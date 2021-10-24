@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <main id="form-container">
+        <section id="login">
+            <h1>Login</h1>
+            <form action="#" class="login">
+                <input type="text" name="username" placeholder="Enter Username" required>
+                <input type="password" name="userpassword" placeholder="Enter Password" required>
+                <input type="submit" name="login" value="Login">
+                <h5>Not a member? <a href="#" onclick="showHide('signup', 'login')">Register here!</a></h5>
+            </form>
+        </section>
+
+        <section id="signup">
+            <h1>Signup</h1>
+            <form action="#" class="signup">
+                <input type="text" name="fullname" placeholder="Enter Fullname" required>
+                <input type="text" name="username" placeholder="Enter Username" required>
+                <input type="password" name="userpassword" placeholder="Enter Password" required>
+                <input type="submit" name="signup" value="Signup">
+                <h5>Already a member? <a href="#" onclick="showHide('login', 'signup')">Log in here!</a></h5>
+            </form>
+        </section>
+    </main>    
+</body>
+</html>
