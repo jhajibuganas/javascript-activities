@@ -52,8 +52,8 @@ body {
   font-size: 14px;
 }
 
-#login button,
-#signup button {
+#login input[type="submit"],
+#signup input[type="submit"] {
   font-family: "Open Sans", sans-serif;
   outline: 0;
   background: #4caf50;
