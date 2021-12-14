@@ -1,12 +1,13 @@
+const URL = 'https://phisix-api4.appspot.com/stocks.json';
 const stocksContainer = document.getElementById('stockList');
 const getBtn = document.getElementById('get-btn');
 
-getBtn.addEventListener('click', function () {
+const getData = () => {
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://phisix-api4.appspot.com/stocks.json', true);
-  xhr.onload = function () {
-    let ourData = JSON.parse(this.responseText);
-    let data = ourData;
+  xhr.open('GET', URL, true);
+  xhr.responseType = 'json';
+  xhr.onload = () => {
+    let data = xhr.response;
     console.log(data);
 
     let table = document.getElementById('stocksList')
@@ -23,9 +24,10 @@ getBtn.addEventListener('click', function () {
                 `
       table.innerHTML += row
     }
+
   }
   xhr.send();
 
-});
+};
 
-
+getBtn.addEventListener('click', getData);
